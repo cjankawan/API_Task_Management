@@ -1,0 +1,1103 @@
+{
+	"info": {
+		"_postman_id": "f8653db5-23e5-4328-b2d8-96d35d72990f",
+		"name": "API_task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32187536"
+	},
+	"item": [
+		{
+			"name": "Post Task",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"post\",\n  \"description\": \"post function check\",\n  \"status\": \"in-progress\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tasks"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"title\": \"Build a task API\",\n  \"description\": \"Create a REST endpoint to add tasks\",\n  \"status\": \"in-progress\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/tasks",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"tasks"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "183"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b7-XApMYxXJSJXvCftkYNyoE7yjgDg\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Apr 2025 03:58:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"title\": \"Build a task API\",\n    \"description\": \"Create a REST endpoint to add tasks\",\n    \"status\": \"in-progress\",\n    \"_id\": \"67f89379c17052b573922afd\",\n    \"createdAt\": \"2025-04-11T03:58:49.126Z\",\n    \"__v\": 0\n}"
+						},
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"title\": \"eee\",\n  \"description\": \"eeeeeeeeeeeeeeee\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/tasks",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"tasks"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "147"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"93-OAFLxqnH8FzAFKGiaJjh7VKwMmI\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Apr 2025 16:55:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"title\": \"eee\",\n    \"description\": \"eeeeeeeeeeeeeeee\",\n    \"status\": \"pending\",\n    \"_id\": \"67f9499fd6c8a191522cc13e\",\n    \"createdAt\": \"2025-04-11T16:55:59.624Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Get Task",
+			"item": [
+				{
+					"name": "getting data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tasks"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/tasks",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"tasks"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "240"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f0-bDpKnTUfNGPZLkYdPJxy6jkW9L0\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Apr 2025 04:50:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"total\": 1,\n    \"page\": 1,\n    \"limit\": 10,\n    \"tasks\": [\n        {\n            \"_id\": \"67f89379c17052b573922afd\",\n            \"title\": \"Build full task API\",\n            \"description\": \"Update this task to reflect full RESTful coverage\",\n            \"status\": \"completed\",\n            \"createdAt\": \"2025-04-11T03:58:49.126Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Paginated",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/tasks?page=1&limit=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/tasks?page=2&limit=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"tasks"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "2"
+										},
+										{
+											"key": "limit",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "223"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"df-tQHXgdziuTYslT5uBlFr2FSZ3b0\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Apr 2025 04:11:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"total\": 2,\n    \"page\": 2,\n    \"limit\": 1,\n    \"tasks\": [\n        {\n            \"_id\": \"67f89052608529565c6ab12c\",\n            \"title\": \"Finish backend\",\n            \"description\": \"Complete the Express + MongoDB logic\",\n            \"status\": \"in-progress\",\n            \"createdAt\": \"2025-04-11T03:45:22.581Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Sorted by title in ascending",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/tasks?sortBy=title&order=asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "title"
+								},
+								{
+									"key": "order",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Sorted by title in ascending",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/tasks?sortBy=title&order=asc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"tasks"
+									],
+									"query": [
+										{
+											"key": "sortBy",
+											"value": "title"
+										},
+										{
+											"key": "order",
+											"value": "asc"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "408"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"198-2KOw45zdUee+6tF/N1DSX6M/lpk\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Apr 2025 04:21:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"total\": 2,\n    \"page\": 1,\n    \"limit\": 10,\n    \"tasks\": [\n        {\n            \"_id\": \"67f89052608529565c6ab12c\",\n            \"title\": \"Finish backend\",\n            \"description\": \"Complete the Express + MongoDB logic\",\n            \"status\": \"in-progress\",\n            \"createdAt\": \"2025-04-11T03:45:22.581Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"67f89379c17052b573922afd\",\n            \"title\": \"Build a task API\",\n            \"description\": \"Create a REST endpoint to add tasks\",\n            \"status\": \"in-progress\",\n            \"createdAt\": \"2025-04-11T03:58:49.126Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Filter by status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/tasks?status=in-progress",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "in-progress"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/tasks?status=in-progress",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"tasks"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "in-progress"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "408"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"198-w4K9V4bahLh86bUMMiuQNmUkAZc\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Apr 2025 04:26:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"total\": 2,\n    \"page\": 1,\n    \"limit\": 10,\n    \"tasks\": [\n        {\n            \"_id\": \"67f89379c17052b573922afd\",\n            \"title\": \"Build a task API\",\n            \"description\": \"Create a REST endpoint to add tasks\",\n            \"status\": \"in-progress\",\n            \"createdAt\": \"2025-04-11T03:58:49.126Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"67f89052608529565c6ab12c\",\n            \"title\": \"Finish backend\",\n            \"description\": \"Complete the Express + MongoDB logic\",\n            \"status\": \"in-progress\",\n            \"createdAt\": \"2025-04-11T03:45:22.581Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "All parameter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/tasks?status=completed&page=1&limit=5&sortBy=title&order=dec&createdAt=2025-04-11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "completed"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "sortBy",
+									"value": "title"
+								},
+								{
+									"key": "order",
+									"value": "dec"
+								},
+								{
+									"key": "createdAt",
+									"value": "2025-04-11"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "All parameter",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/tasks?status=completed&page=1&limit=5&sortBy=title&order=dec&createdAt=2025-04-11",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"tasks"
+									],
+									"query": [
+										{
+											"key": "status",
+											"value": "completed"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "limit",
+											"value": "5"
+										},
+										{
+											"key": "sortBy",
+											"value": "title"
+										},
+										{
+											"key": "order",
+											"value": "dec"
+										},
+										{
+											"key": "createdAt",
+											"value": "2025-04-11"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "389"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"185-zR4baj3bdIFmSiArK8HNTOHa37M\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Apr 2025 16:45:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"total\": 2,\n    \"page\": 1,\n    \"limit\": 5,\n    \"tasks\": [\n        {\n            \"_id\": \"67f89379c17052b573922afd\",\n            \"title\": \"cccccc\",\n            \"description\": \"cccccccccccccccccccccccccccccc\",\n            \"status\": \"completed\",\n            \"createdAt\": \"2025-04-11T03:58:49.126Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"67f94101900ac37bf5a19703\",\n            \"title\": \"Build a task API\",\n            \"description\": \"Create a REST endpoint to add tasks\",\n            \"status\": \"completed\",\n            \"createdAt\": \"2025-04-11T16:19:13.257Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Retrieving specific ID.",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/tasks/67f89379c17052b573922afd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tasks",
+								"67f89379c17052b573922afd"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/tasks/67f89052608529565c6ab12c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"tasks",
+										"67f89052608529565c6ab12c"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "182"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b6-GYoy4omzV/5tFCRSz+i/yZTg7K4\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Apr 2025 04:36:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"67f89052608529565c6ab12c\",\n    \"title\": \"Finish backend\",\n    \"description\": \"Complete the Express + MongoDB logic\",\n    \"status\": \"in-progress\",\n    \"createdAt\": \"2025-04-11T03:45:22.581Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "Filter by createdAt Date",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/tasks?createdAt=2025-04-11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "createdAt",
+									"value": "2025-04-11"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/tasks?createdAt=2025-04-11",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"tasks"
+									],
+									"query": [
+										{
+											"key": "createdAt",
+											"value": "2025-04-11"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "392"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"188-Ti61hSXVqK6/GBsrTnKuLpPwhRM\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Apr 2025 16:33:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"total\": 2,\n    \"page\": 1,\n    \"limit\": 10,\n    \"tasks\": [\n        {\n            \"_id\": \"67f94101900ac37bf5a19703\",\n            \"title\": \"Build a task API\",\n            \"description\": \"Create a REST endpoint to add tasks\",\n            \"status\": \"in-progress\",\n            \"createdAt\": \"2025-04-11T16:19:13.257Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"67f89379c17052b573922afd\",\n            \"title\": \"cccccc\",\n            \"description\": \"cccccccccccccccccccccccccccccc\",\n            \"status\": \"completed\",\n            \"createdAt\": \"2025-04-11T03:58:49.126Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Put task",
+			"item": [
+				{
+					"name": "updating task",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"ddd\",\n  \"description\": \"ddddddddddddddd\",\n  \"status\": \"completed\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/tasks/67f89379c17052b573922afd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tasks",
+								"67f89379c17052b573922afd"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"title\": \"Build full task API\",\n  \"description\": \"Update this task to reflect full RESTful coverage\",\n  \"status\": \"completed\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/tasks/67f89379c17052b573922afd",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"tasks",
+										"67f89379c17052b573922afd"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "198"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c6-9uTrYFMWpNIw3kEM5+Uv0+PhwDY\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Apr 2025 04:46:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"67f89379c17052b573922afd\",\n    \"title\": \"Build full task API\",\n    \"description\": \"Update this task to reflect full RESTful coverage\",\n    \"status\": \"completed\",\n    \"createdAt\": \"2025-04-11T03:58:49.126Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Delete task",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/tasks/ad23dasqsa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tasks",
+								"ad23dasqsa"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/tasks/67f89052608529565c6ab12c",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"tasks",
+										"67f89052608529565c6ab12c"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "229"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e5-HYXZJ0Bmz0DME63TcaA0s6ID5iQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Apr 2025 04:50:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Task deleted successfully\",\n    \"task\": {\n        \"_id\": \"67f89052608529565c6ab12c\",\n        \"title\": \"Finish backend\",\n        \"description\": \"Complete the Express + MongoDB logic\",\n        \"status\": \"in-progress\",\n        \"createdAt\": \"2025-04-11T03:45:22.581Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Patch task",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"status\": \"pending\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/tasks/67f94101900ac37bf5a19703/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tasks",
+								"67f94101900ac37bf5a19703",
+								"status"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"status\": \"pending\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/tasks/67f94101900ac37bf5a19703/status",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"tasks",
+										"67f94101900ac37bf5a19703",
+										"status"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "179"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b3-+g4V7neaboTYIgRrxaJ3r9Q7PPk\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 11 Apr 2025 16:52:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"67f94101900ac37bf5a19703\",\n    \"title\": \"Build a task API\",\n    \"description\": \"Create a REST endpoint to add tasks\",\n    \"status\": \"pending\",\n    \"createdAt\": \"2025-04-11T16:19:13.257Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
