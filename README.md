@@ -3,6 +3,8 @@
 
 A simple Task Manager REST API built with Node.js, Express, and MongoDB.
 
+URL and data in postman dump file "API_task.postman_collection.json"
+
 ---
 
 ## Features
